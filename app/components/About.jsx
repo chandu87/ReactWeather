@@ -5,6 +5,7 @@ var About= React.createClass({
     return(
       <div>
         <h4>About Component</h4>
+        <p>About weather app... it is written in javascript!!</p>
         <ul>
           <li>Home</li>
           <li>About</li>
