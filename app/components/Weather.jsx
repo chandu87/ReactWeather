@@ -19,7 +19,7 @@ var Weather= React.createClass({
             location:location,
             temp:temp,
             isLoading:false
-          }); 
+          });
         },function(errorMessage){
           that.setState({
             isLoading:false
@@ -33,7 +33,7 @@ var Weather= React.createClass({
     function rendorMessage(){
       if(isLoading){
 
-        return <h3>Fectching Weather . . . . </h3>;
+        return <h3 className="text-center">Fectching Weather . . . . </h3>;
       }
       else if(location && temp){
         return <WeatherMessage location={location} temp={temp}/>
@@ -41,7 +41,7 @@ var Weather= React.createClass({
     }
     return(
       <div>
-        <h3>Get Weather</h3>
+        <h3 className="text-center">Get Weather</h3>
         <WeatherForm sendData={this.handleData}/>
         {rendorMessage()}
       </div>
