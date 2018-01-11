@@ -29,7 +29,8 @@ var webpack=require('webpack');
        WeatherMessage:'app/components/WeatherMessage.jsx',
        About:'app/components/About.jsx',
        Examples:'app/components/Examples.jsx',
-       OpenWeatherMap:'api/openWeatherMap.jsx'
+       OpenWeatherMap:'api/openWeatherMap.jsx',
+       ErrorModal: 'app/components/ErrorModal.jsx'
      },
      extensions: ['','.js','.jsx']
    },
