@@ -56,7 +56,7 @@ var Weather= React.createClass({
     }
     return(
       <div>
-        <h3 className="text-center page-title">Get Weather</h3>
+        <h1 className="text-center page-title">Get Weather</h1>
         <WeatherForm sendData={this.handleData}/>
         {rendorMessage()}
         {rendorError()}
